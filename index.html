@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f6fde">
+  <meta name="description" content="Offline health records for the whole family — vitals, history, visits, reports, bills and reminders.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Health Vault">
+  <title>Sudhars Family Health Vault</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <a id="back" class="back" href="#/" hidden aria-label="Back">‹</a>
+    <div id="logo" class="logo">🩺</div>
+    <h1 id="title">Family Health Vault</h1>
+  </header>
+
+  <main id="view"><div class="empty">Loading…</div></main>
+
+  <button id="fab" class="btn fab no-print" aria-label="Add">+</button>
+
+  <nav class="bottomnav">
+    <a href="#/" data-nav="home"><span class="i">🏠</span>Family</a>
+    <a href="#/reminders" data-nav="reminders"><span class="i">⏰</span>Reminders<span id="remDot" class="dot" hidden></span></a>
+    <a href="#/sync" data-nav="sync"><span class="i">🔄</span>Sync</a>
+  </nav>
+
+  <script src="js/types.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/backup.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
