@@ -4,15 +4,15 @@ const CACHE = 'fhv-v2.0.0';
 const SHELL = [
   './',
   'index.html',
-  'css/app.css',
-  'js/types.js',
-  'js/db.js',
-  'js/backup.js',
-  'js/app.js',
+  'app.css',
+  'types.js',
+  'db.js',
+  'backup.js',
+  'app.js',
   'manifest.webmanifest',
-  'icons/icon.svg',
-  'icons/icon-192.png',
-  'icons/icon-512.png'
+  'icon.svg',
+  'icon-192.png',
+  'icon-512.png'
 ];
 
 self.addEventListener('install', ev => {
